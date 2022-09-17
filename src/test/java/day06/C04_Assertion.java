@@ -35,7 +35,7 @@ public class C04_Assertion {
     @AfterClass
     public static void tearDown() throws InterruptedException {
         Thread.sleep(3000);
-        // driver.close();
+        driver.close();
     }
 
     @Test
