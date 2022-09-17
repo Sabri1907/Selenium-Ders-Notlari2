@@ -14,7 +14,7 @@ public class C02_BeforeAfter {
     WebDriver driver; // Diger testlerde de kullanabilmek icin class seviyesinde
     // olusturup method icinde deger atadik.
 
-    // Before notasyonuyla birlikte kulanilan method genelde setUp olarak adlandirilir.
+    // Before notasyonuyla birlikte kulanilan method genelde setUp, after ise tearDown olarak adlandirilir.
     // => Before notasyonu her testten once calisir
     // => After notasyonu her testten sonra calisir.
     // => Beofre/After hangi sirayla yazdigimizin onemi yok once before, sonra test, sonra da after calisir.
