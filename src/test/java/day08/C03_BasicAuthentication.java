@@ -20,9 +20,9 @@ public class C03_BasicAuthentication {
     WebDriver driver;
 
     @Before
-    public void setUp(){
+    public void setUp() {
         WebDriverManager.chromedriver().setup();
-        driver=new ChromeDriver();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
@@ -36,7 +36,7 @@ public class C03_BasicAuthentication {
     }
 
     @Test
-    public void test1(){
+    public void test1() {
         // Basic Authentication yapalim
         driver.get("https://admin:admin@the-internet.herokuapp.com/basic_auth");
 
