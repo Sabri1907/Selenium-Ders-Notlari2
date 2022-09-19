@@ -11,6 +11,20 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class C01_Alerts {
+
+     /*
+    Bir web sayfasina girdigimizde bir uyari mesaji ya da bir button'a tikladigimizda
+    bir uyari cikabilir. Eger bu uyariya incele yapabiliyorsak bu tur alert'lere "Html Alert" denir.
+    Bu tur alert'ler locate edilebilir.
+        Ancak gelen uyari kutusuna inceleme yapamiyorsak bu tur alert'lere Js alert denir. Bu alert'lere
+    mudahale etmek icin asagidaki islemler yapilir.
+    => driver.switchTo().alert().accept() : Tamam y ada ok demek icin kullanilir.
+    => driver.switchTo().alert().dismiss(): Iptal veya cancel demek icin kullanilir.
+    => driver.switchTo().alert().getText(): Alert icindeki mesaji almak icin kullanilir.
+    => driver.switchTo().alert().sendKeys("..) : Alert metin kutusu seklinde olursa ve icine bir sey yazmak
+       istersek kullanilir.
+     */
+
     /*
     => https://the-internet.herokuapp.com/javascript_alerts adresine gidelim.
     => Click for js Alert butonuna tiklayalim
