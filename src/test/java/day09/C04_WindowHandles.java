@@ -18,11 +18,13 @@ public class C04_WindowHandles {
 
     /*
         Bazen bir linke vb. tikladigimizda otomatik olarak yeni bir sayfa acilir. Bu durumda
-    acilan yeni sayfanin handle degerini WondowHandle() methoduyla alamayiz. Bunu cozmek icin
+    acilan yeni sayfanin handle degerini WondowHandle() methoduyla alamayiz. Bunu sorunu
     WindowHandles methodu kullanarak su sekilde cozeriz.
-        1. Once arraylist olusturup acik olan sayfalarin handle degerlerini WindowHandles ile array'a atariz.
-        2. Array'in index yapisindan faydalanarak hangi sayfaya gitmek istersek o sayfanin index'i ile
+        1. Once arraylist olusturup acik olan sayfalarin handle degerlerini driver.getWindowHandles()
+           methoduyla ArrayList'e atariz.
+        2. Arraylist'in index yapisindan faydalanarak hangi sayfaya gitmek istersek o sayfanin index'i ile
            handle degerine ulasip kullaniriz.
+           =>ORNEK:driver.switchTo().winfow(listAdi.get(1))
      */
 
 
@@ -59,6 +61,9 @@ public class C04_WindowHandles {
 
         //Click Here butonuna basın.
         driver.findElement(By.xpath("//*[text()='Click Here']")).click();
+        /*
+        Bir web sitesine gittigimizde
+         */
         List<String> windowList=new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(windowList.get(1));
         Thread.sleep(3000);
@@ -70,6 +75,7 @@ public class C04_WindowHandles {
         Assert.assertEquals("New Window",driver.findElement(By.xpath("//h3")).getText());
 
         //  Bir önceki pencereye geri döndükten sonra sayfa başlığının “The Internet” olduğunu  doğrulayın.
+        Thread.sleep(3000);
         driver.switchTo().window(windowList.get(0));
         Assert.assertEquals("The Internet",driver.getTitle());
 
