@@ -54,9 +54,12 @@ public class C05_IFrameOdev {
 
        // 5)        ikinci iframe'deki (Jmeter Made Easy) linke (https://www.guru99.com/live-selenium-project.html)
         //tıklayınız
-        //WebElement frame2= driver.findElement(By.xpath("//iframe[2]"));
-       // driver.switchTo().frame(frame2);
-        driver.findElement(By.xpath("//*[@href='https://www.guru99.com/live-selenium-project.html']")).click();
+        List<WebElement> iframeList=new ArrayList<>(driver.findElements(By.xpath("//iframe")));
+        driver.switchTo().frame(iframeList.get(1));
+
+        WebElement son=driver.findElement(By.xpath("//*[@href='https://www.guru99.com/live-selenium-project.html']"));
+        son.click();
+
 
 
 

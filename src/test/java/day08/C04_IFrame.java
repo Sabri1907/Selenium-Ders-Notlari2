@@ -21,7 +21,7 @@ public class C04_IFrame {
     yerlestirilmis baska bir html dokumanidir.
         Bir web sitesinde bir video (youtube vb.) varsa ve <iframe> tag'i icerisindeyse bu video'yu
     direkt locate edip calistirmak dinamik olmaz. Cunku link degisebilir ve locate'imiz calismaz.
-    Bunun icin butun butun frame'leri bir Arraylist'e atip index ile istedigimiz frame'i secip sonrasinda
+    Bunun icin butun frame'leri bir Arraylist'e atip index ile istedigimiz frame'i secip sonrasinda
     "play" tusunu locate edip calistirabiliriz.
      */
     WebDriver driver;
