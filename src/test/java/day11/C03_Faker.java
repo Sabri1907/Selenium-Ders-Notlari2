@@ -33,7 +33,7 @@ public class C03_Faker extends TestBaseBeforeAfter {
             Faker class'indan bir obje olusturup:
         =>email icin faker.internet() methodunu kullanarak emailAddress() methodunu seceriz.
         =>password icin faker.internet().password() methodu kullanilir.
-        =>isim ve soyisimler icin faker.name().firstName() ve faker.name().firstName() methodlari kullanilir.
+        =>isim ve soyisimler icin faker.name().firstName() ve faker.name().lastName() methodlari kullanilir.
          */
         actions.click(isim).sendKeys(faker.name().firstName())
 

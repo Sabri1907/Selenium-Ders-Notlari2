@@ -10,7 +10,7 @@ import utilities.TestBaseBeforeAfter;
 public class C02_Actions extends TestBaseBeforeAfter {
     @Test
     public void test1() {
-        //1- https://www.facebook.com adresine gidelim  2- Yeni hesap olustur butonuna basalim
+        //1- https://www.facebook.com adresine gidelim
         driver.get("https://www.facebook.com");
 
         // 2- Yeni hesap olustur butonuna basalim
@@ -35,6 +35,5 @@ public class C02_Actions extends TestBaseBeforeAfter {
                 // 4- Kaydol tusuna basalim
                 .sendKeys(Keys.ENTER).perform();
 
-        // 4- Kaydol tusuna basalim
     }
 }
