@@ -8,7 +8,7 @@ import utilities.TestBaseBeforeAfter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class C05_FileExist extends TestBaseBeforeAfter {
+public class C05_FileExist_DownLoad extends TestBaseBeforeAfter {
     @Test
     public void test1() {
         // https://the-internet.herokuapp.com/download adresine gidelim
