@@ -35,6 +35,7 @@ public class C03_Faker extends TestBaseBeforeAfter {
         =>password icin faker.internet().password() methodu kullanilir.
         =>isim ve soyisimler icin faker.name().firstName() ve faker.name().lastName() methodlari kullanilir.
          */
+
         actions.click(isim).sendKeys(faker.name().firstName())
 
                 //“surname” giris kutusuna bir soyisim yazin

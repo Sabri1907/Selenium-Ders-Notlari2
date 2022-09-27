@@ -17,7 +17,9 @@ public class C04_FileExist {
     => Assert.assertTrue(Files.exists(Paths.get(dosyaYolu)));
     => System.out.println(Files.exists(Paths.get(dosyaYolu))); // True veya false dondurur.
     ==============================================>NOT<====================================================
-        Selenium'la bilgisayara ulasamadigimiz icin bilgisayardaki dosyayi Java ile kontrol editoruz.
+        Selenium'la bilgisayara ulasamadigimiz icin bilgisayardaki dosyayi Java ile kontrol ediyoruz.
+
+
 
 
 
@@ -49,7 +51,9 @@ public class C04_FileExist {
         */
         // 2. YONTEM (KISA & PRATIK YONTEM)
         String dosyaYolu="C:\\Users\\dell\\Desktop\\text.txt.txt";
+
         System.out.println(Files.exists(Paths.get(dosyaYolu)));
         Assert.assertTrue(Files.exists(Paths.get(dosyaYolu)));
+
     }
 }
