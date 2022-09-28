@@ -2,6 +2,7 @@ package day14;
 
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.FileInputStream;
@@ -25,8 +26,9 @@ public class C03_ReadExcel {
         System.out.println(actualData);
 
 
-
      // Sonucun konsolda yazanla ayni oldugunu dogrulayin
+        String konsoldaYazan="Baku";
+        Assert.assertEquals(konsoldaYazan,actualData);
 
     }
 }
