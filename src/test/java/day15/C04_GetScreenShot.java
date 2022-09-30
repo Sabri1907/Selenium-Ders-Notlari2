@@ -24,12 +24,12 @@ public class C04_GetScreenShot extends TestBaseBeforeAfter {
 
         /*
             Bir web sayfasinin ekran goruntusunu almak icin  TakesScreenShot class'indan bir obje olusturup
-        gecici bir File Class'indan degiskene  TakesScreenShot'dan olusturdugum obje'den getScreenShotAs()
+        gecici bir File Class'indan degiskene  TakesScreenShot'dan olusturdugumuz obje'den getScreenShotAs()
         methodunu kullanarak gecici bir file olustururuz.
          */
 
         /*
-         NOT => Target'ta olusturdugumuz klasordeki dosya yoluna hangi sayfaya godersek ayni dosya
+         NOT => Target'ta olusturdugumuz klasordeki dosya yoluna hangi sayfaya gidersek ayni dosya
         ustune yazdiriyor. Bunun onune gecmek icin LocalDateTime olusturarak dosya yoluna ekledik ve
         her ekran goruntusu aldiginda tarih sirasina gore alt alta siraladi.
             Ve bunu TestBaseBeforeAfter class'ina atarak her testimizde kullanabilecegiz.
