@@ -18,8 +18,8 @@ public class C02_JSExecuter extends TestBaseBeforeAfter {
         // => JavascriptExecutor class'indan obje olusturup diver'i atadik ve casting yaptik
 
         jse.executeScript("arguments[0].scrollIntoView(true);",careers);
-        // JS objesiyle birlikte executeScript methodunu kullanarak istedigimiz webelement gorununceye kadar scroll
-        // yaptik
+        // JS objesiyle birlikte executeScript() methodunu kullanarak istedigimiz webelement gorununceye
+        // kadar scroll yaptik
 
         // Careers butonuna js ile click yapalim
         jse.executeScript("arguments[0].click();",careers);
